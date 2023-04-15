@@ -1,0 +1,81 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Fira Sans";
+}
+
+
+/******************************************
+/* Hero section
+/*******************************************/
+
+.hero-section {
+    min-height: 75vh;
+    background: url(../images/hero-bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-section > div {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-section > div h1 {
+    font-size: 8.5rem;
+    max-width: 638px;
+    font-weight: 200;
+    color: #0C4E59;
+}
+
+.hero-section > div h2 {
+    font-size: 3.6rem;
+    max-width: 638px;
+    font-weight: 200;
+    color: #00909D;
+    margin-bottom: 60px;
+}
+
+.hero-section > div a {
+    font-family: "Arimo";
+    font-size: 1.5rem;
+    max-width: 638px;
+    font-weight: 700;
+    color: #0B647A;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 100px;
+}
