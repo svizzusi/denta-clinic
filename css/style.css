@@ -1,3 +1,24 @@
+:root {
+    --colorOne: rgb(211,211,211);
+    --colorTwo: rgb(255,255,255);
+    --colorThree: #127486;
+    --colorFour: rgb(116,128,124);
+    --colorFive: #292929;
+    --colorSix: rgb(207,216,218);
+    --colorSeven: #4A4F52;
+    --colorEight: rgb(0,103,124);
+    --colorNine: rgb(0,139,160);
+    --colorTen: #0C4E59;
+    --colorEleven: #00909D;
+    --colorTwelve: #0B647A;
+    --colorThirteen: rgb(0,198,253);
+    --colorFourteen: rgb(0,227,209);
+    --colorFifteen: rgb(34,230,167);
+    --colorSixteen: rgb(51,151,167);
+    --colorSeventeen: rgb(0,89,109);
+    --colorEighteen: #19BFD1;
+}
+
 /* Box Model Hack */
 * {
     box-sizing: border-box;
@@ -55,29 +76,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid var(--colorOne);
 }
 
 .top-header-box-1 > a{
-    color: #127486;
+    color: --colorThree;
     font-size: 2.1rem;
     text-decoration: none;
 }
 
 .top-header-box-1 > a:hover {
-    color: rgb(116,128,124);
+    color: colorFour;
     transition: .3s ease-in-out;
 }
 
 .top-header-box-2 {
     width: 100%;
     max-width: 60%;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid var(--colorOne);
     height: 100%;
     display: flex;
     align-items: center;
     padding-left: 20px;
-    color: #292929;
+    color: --colorFive;
     font-size: 1.6rem;
 }
 
@@ -93,12 +114,12 @@ body {
 }
 
 .top-header-box-3 > span {
-    color: rgb(207,216,218);
+    color: --colorSix;
     
 }
 
 .top-header-box-3 > span:hover {
-    color: rgb(116,128,124);
+    color: --colorFour;
 }
 
 
@@ -116,7 +137,7 @@ body {
     justify-content: center;
     position: sticky;
     top: 0;
-    background: #ffffff;
+    background: var(--colorTwo);
 }
 
 .navigation {
@@ -126,7 +147,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid var(--colorOne);
 }
 
 .nav-logo{
@@ -151,28 +172,28 @@ body {
 .nav-list a {
     font-size: 1.7rem;
     text-decoration: none;
-    color: #4A4F52;
+    color: --colorSeven;
 }
 
 .nav-list a:hover {
-    color: #127486;
+    color: --colorThree;
 }
 
 .nav-list .active {
-    color: #127486;
+    color: --colorThree;
 }
 
 .nav-list .nav-list-btn {
-    background-image: linear-gradient(rgb(0,103,124), rgb(0,139,160));
+    background-image: linear-gradient(--colorEight, --colorNine);
     padding: 15px 20px;
     border-radius: 100px;
-    color: #ffffff;
+    color: var(--colorTwo);
     transition: .3s ease-in-out;
 }
 
 .nav-list .nav-list-btn:hover {
-    background-image: linear-gradient( to top, rgb(0,103,124), rgb(0,139,160));
-    color: #ffffff;
+    background-image: linear-gradient( to top, --colorEight, --colorNine);
+    color: var(--colorTwo);
 }
 
 
@@ -201,14 +222,14 @@ body {
     font-size: 8.5rem;
     max-width: 638px;
     font-weight: 200;
-    color: #0C4E59;
+    color: --colorTen;
 }
 
 .hero-section > div h2 {
     font-size: 3.6rem;
     max-width: 638px;
     font-weight: 200;
-    color: #00909D;
+    color: --colorEleven;
     margin-bottom: 60px;
 }
 
@@ -217,9 +238,9 @@ body {
     font-size: 1.5rem;
     max-width: 638px;
     font-weight: 700;
-    color: #0B647A;
+    color: --colorTwelve;
     text-decoration: none;
-    background: #ffffff;
+    background: var(--colorTwo);
     padding: 20px 40px;
     border-radius: 100px;
     outline: none;
@@ -228,9 +249,9 @@ body {
 
 .hero-section > div a:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  background: none;;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background: none;
+  border: 2px solid var(--colorTwo);
+  color: var(--colorTwo);
 }
 
 /******************************************
@@ -261,24 +282,24 @@ body {
     border-radius: 20px;
     background-image: linear-gradient(rgb(0,101,121), rgb(0,129,148));
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: #ffffff;
+    color: var(--colorTwo);
     padding: 36px;
     text-align: center;
 }
 
 .big-section .icon1 {
     font-size: 5.8rem;
-    color: rgb(0,198,253);
+    color: --colorThirteen;
 }
 
 .big-section .icon2 {
     font-size: 5.8rem;
-    color: rgb(0,227,209);
+    color: --colorFourteen;
 }
 
 .big-section .icon3 {
     font-size: 5.8rem;
-    color: rgb(34,230,167);
+    color: --colorFifteen
 }
 
 .big-section article h3 {
@@ -295,8 +316,8 @@ body {
 .big-section article a {
     font-size: 1.2rem;
     padding: 10px;
-    color: #ffffff;
-    background: rgb(51,151,167);
+    color: var(--colorTwo);
+    background: --colorSixteen;
     border-radius: 100px;
     text-decoration: none;
 }
@@ -307,9 +328,29 @@ body {
 /*******************************************/
 
 .appointment-section {
-    background: rgb(0,89,109);
+    background: --colorSeventeen;
     width: 100%;
     height: 383px;
+    padding: 80px 0;
+}
+
+.appointment-section section {
+
+}
+
+.appointment-section section h4 {
+    font-size: 2.2rem;
+    color: --colorEighteen;
+}
+
+.appointment-section section h2 {
+    font-size: 3.8rem;
+    color: var(--colorTwo);
+}
+
+.appointment-section section p {
+    font-size: 2rem;
+    color: var(--colorTwo);
 }
 
 
