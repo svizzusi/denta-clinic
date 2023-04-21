@@ -79,14 +79,14 @@ body {
     border-right: 1px solid var(--colorOne);
 }
 
-.top-header-box-1 > a{
-    color: --colorThree;
+.top-header-box-1 a{
+    color: var(--colorThree);
     font-size: 2.1rem;
     text-decoration: none;
 }
 
-.top-header-box-1 > a:hover {
-    color: colorFour;
+.top-header-box-1 a:hover {
+    color: var(--colorFour);
     transition: .3s ease-in-out;
 }
 
@@ -98,7 +98,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    color: --colorFive;
+    color: var(--colorFive);
     font-size: 1.6rem;
 }
 
@@ -113,13 +113,14 @@ body {
     padding-left: 20px;
 }
 
-.top-header-box-3 > span {
-    color: --colorSix;
-    
+.ionicon {
+    color: var(--colorSix);
+    color: red;
 }
 
-.top-header-box-3 > span:hover {
-    color: --colorFour;
+.ionicon:hover {
+    color: var(--colorFour);
+    color: black;
 }
 
 
@@ -172,19 +173,19 @@ body {
 .nav-list a {
     font-size: 1.7rem;
     text-decoration: none;
-    color: --colorSeven;
+    color: var(--colorSeven);
 }
 
 .nav-list a:hover {
-    color: --colorThree;
+    color: var(--colorThree);
 }
 
 .nav-list .active {
-    color: --colorThree;
+    color: var(--colorThree);
 }
 
 .nav-list .nav-list-btn {
-    background-image: linear-gradient(--colorEight, --colorNine);
+    background-image: linear-gradient(var(--colorEight), var(--colorNine));
     padding: 15px 20px;
     border-radius: 100px;
     color: var(--colorTwo);
@@ -192,7 +193,7 @@ body {
 }
 
 .nav-list .nav-list-btn:hover {
-    background-image: linear-gradient( to top, --colorEight, --colorNine);
+    background-image: linear-gradient( to top, var(--colorEight), var(--colorNine));
     color: var(--colorTwo);
 }
 
@@ -222,14 +223,14 @@ body {
     font-size: 8.5rem;
     max-width: 638px;
     font-weight: 200;
-    color: --colorTen;
+    color: var(--colorTen);
 }
 
 .hero-section > div h2 {
     font-size: 3.6rem;
     max-width: 638px;
     font-weight: 200;
-    color: --colorEleven;
+    color: var(--colorEleven);
     margin-bottom: 60px;
 }
 
@@ -238,7 +239,7 @@ body {
     font-size: 1.5rem;
     max-width: 638px;
     font-weight: 700;
-    color: --colorTwelve;
+    color: var(--colorTwelve);
     text-decoration: none;
     background: var(--colorTwo);
     padding: 20px 40px;
@@ -289,17 +290,17 @@ body {
 
 .big-section .icon1 {
     font-size: 5.8rem;
-    color: --colorThirteen;
+    color: var(--colorThirteen);
 }
 
 .big-section .icon2 {
     font-size: 5.8rem;
-    color: --colorFourteen;
+    color: var(--colorFourteen);
 }
 
 .big-section .icon3 {
     font-size: 5.8rem;
-    color: --colorFifteen
+    color: var(--colorFifteen);
 }
 
 .big-section article h3 {
@@ -317,7 +318,7 @@ body {
     font-size: 1.2rem;
     padding: 10px;
     color: var(--colorTwo);
-    background: --colorSixteen;
+    background: var(--colorSixteen);
     border-radius: 100px;
     text-decoration: none;
 }
@@ -328,7 +329,7 @@ body {
 /*******************************************/
 
 .appointment-section {
-    background: --colorSeventeen;
+    background: var(--colorSeventeen);
     width: 100%;
     height: 383px;
     padding: 80px 0;
@@ -340,7 +341,7 @@ body {
 
 .appointment-section section h4 {
     font-size: 2.2rem;
-    color: --colorEighteen;
+    color: var(--colorEighteen);
 }
 
 .appointment-section section h2 {
