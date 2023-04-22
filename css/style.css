@@ -17,6 +17,8 @@
     --colorSixteen: rgb(51,151,167);
     --colorSeventeen: rgb(0,89,109);
     --colorEighteen: #19BFD1;
+    --colorNineteen: rgb(242,247,248);
+    --colorTwenty: rgb(221,235,241);
 }
 
 /* Box Model Hack */
@@ -331,71 +333,596 @@ body {
 .appointment-section {
     background: var(--colorSeventeen);
     width: 100%;
-    height: 383px;
-    padding: 80px 0;
+    padding: 80px 0px;
 }
 
-.appointment-section section {
-
+.appointment-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
+    gap: 60px;
 }
 
-.appointment-section section h4 {
+.appointment-box {
+    width: 100%;
+    max-width: 565px;
+    min-height: 458px;
+    padding: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.appointment-form {
+    width: 100%;
+    max-width: 565px;
+    min-height: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorNineteen);
+    border-radius: 20px;
+}
+
+.appointment-box h4 {
     font-size: 2.2rem;
+    font-weight: 200;
     color: var(--colorEighteen);
 }
 
-.appointment-section section h2 {
+.appointment-box h2 {
     font-size: 3.8rem;
+    font-weight: 200;
     color: var(--colorTwo);
 }
 
-.appointment-section section p {
+.appointment-box p {
     font-size: 2rem;
+    font-weight: 200;
     color: var(--colorTwo);
 }
 
+.form-box {
+    width: 100%;
+    max-width: 565px;
+    height: 383px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* align-items: flex-end; */
+    /* justify-content: space-around; */
+}
 
+.form-box input {
+    background: var(--colorTwo);
+    width: 256px;
+    height: 46px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid var(--colorOne);
+    color: var(--colorOne);
+
+}
+
+.form-box select {
+    background: var(--colorTwo);
+    width: 256px;
+    height: 46px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid var(--colorOne);
+    color: var(--colorOne);
+}
+
+.form-box .submit-btn {
+    background-image: linear-gradient(var(--colorEight), var(--colorNine));
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: var(--colorTwo);
+    transition: .3s ease-in-out;
+}
 /******************************************
 /* Services section
 /*******************************************/
+.services-section {
+    width: 100%;
+    min-height: 419px;
+    background: rgb(229,237,242);
+}
+
+.services-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-container section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.services-container section img {
+   width: 15.0rem;
+}
+
+.services-container section h3 {
+   font-size: 3.2rem;
+   font-weight: 200;
+}
+
+.service-h3-1 {
+    color: #32A8C9;
+}
+
+.service-h3-2 {
+    color: #22A8B5;
+}
+
+.service-h3-3 {
+    color: #20B599;
+}
+
+.service-h3-4 {
+    color: #3BBA78;
+}
+
+.services-container section  p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+}
 
 
 /******************************************
 /* About section
 /*******************************************/
 
+.about-section {
+    width: 100%;
+    height: 640px;
+    background: rgb(242,248,254);
+}
 
+.about-container  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-container section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    padding-right: 350px;
+    
+}
+
+.about-container section span {
+    color: #0A6076;
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+
+.about-container section h3 {
+    color: #292834;
+    font-size: 3.8rem;
+    font-weight: 200;
+}
+
+.about-container section p{
+    color: #47535C;
+    font-size: 2.0rem;
+    font-weight: 200;
+}
+
+.about-container section a {
+    background-image: linear-gradient(var(--colorEight), var(--colorNine));
+    padding: 10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--colorTwo);
+    transition: .3s ease-in-out;
+}
 /******************************************
 /* Review section
 /*******************************************/
 
+.review-section {
+    width: 100%;
+    height: 600px;
+    background: rgb(245,250,253);
+    color: var(--colorSeven);
+}
+
+
+.review-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.review-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-container  article p{
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 200;
+    padding: 0 100px;
+}
+
+.review-container  article span{
+    font-size: 2.0rem;
+    font-weight: 200;
+}
+
+.review-container article span + span{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
 
 /******************************************
 /* Patient Care Section
 /*******************************************/
+.patient-care-section {
+    width: 100%;
+    height: 1000px;
+    background: rgb(245,250,253);
+}
+
+.patient-care-section h2 {
+    color: #1A1C22;
+    font-size: 3.8rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.patient-care-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.patient-care-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient-care-container article h4 {
+    font-size: 2.2rem;
+    font-weight: 200;
+    color: var(--colorTwo);
+}
 
 
 /******************************************
 /* Meet Drs section
 /*******************************************/
+.meet-drs-section {
+    width: 100%;
+    background-image: linear-gradient(rgb(0,84,106), rgb(0,158,174));
+    height: 600px;
+}
+
+.meet-drs-section  h2{
+    color: var(--colorTwo);
+    font-size: 3.8rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.meet-drs-section > a {
+    color: var(--colorTwo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 16px;
+    background: #ffffff4D;
+    border-radius: 5px;
+}
+
+.meet-drs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meet-drs-container  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.meet-drs-container  article h4 {
+    color: var(--colorTwo);
+    font-weight: 200;
+    font-size: 2.6rem;
+}
+
+.meet-drs-container  article span {
+    color: #5BFDDD;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.meet-drs-container  article p {
+    color: var(--colorTwo);
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 
 /******************************************
 /* Sign In section
 /*******************************************/
 
+.sign-in-section {
+    width: 100%;
+    height: 673px;
+    background: rgb(232,237,241);
+}
 
+.sign-in-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sign-in-section-text {
+    padding: 0  50px 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sign-in-container  section h2 {
+    color: #292834;
+    font-size: 3.6rem;
+    font-weight: 200;
+}
+.sign-in-container  section p {
+    color: #292834;
+    font-size: 2.0rem;
+    font-weight: 200;
+}
+
+.sign-in-container  section form {
+
+}
+
+.sign-in-container  section form + p {
+    color: #787D7F;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
 /******************************************
 /* Latest News section
 /*******************************************/
 
+.latest-news-section {
+    width: 100%;
+    height: 700px;
+    background: var(--colorTwo);
+}
+
+.latest-news-section h2 {
+    font-size: 3.8rem;
+    font-weight: 200;
+    color: #1C1E24;
+    text-align: center;
+}
+.latest-news-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latest-news-container article {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.latest-news-container img{
+    padding: 20px;
+}
+
+.latest-news-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.latest-news-container article img {
+
+}
+
+.latest-news-box span{
+    color: #828C92;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.latest-news-box a {
+    color: #1B1E29;
+    font-size: 2.6rem;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+.latest-news-box p {
+    color: #4A4F52;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
 /******************************************
 /* Appointment section
 /*******************************************/
 
+.appointments-section {
+    width: 100%;
+    height: 155px;
+    padding: 60px 0;
+    background: #19BFD1;
+    color: var(--colorTwo);
+}
+
+.appointments-section h3 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.appointments-section a {
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: underline;
+}
 /******************************************
 /* Contacts section
 /*******************************************/
 
+.contacts-section {
+    width: 100%;
+    height: 202px;
+    background: #0A6076;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts-section div {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacts-section div  h3{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: var(--colorTwo);
+}
+
+.contacts-section div  a{
+    font-size: 2.0rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--colorTwo);
+}
+
+.contacts-section div  p{
+    font-size: 2.0rem;
+    font-weight: 200;
+    color: var(--colorTwo);
+}
+
+
 /******************************************
 /* Footer
 /*******************************************/
+footer {
+    width: 100%;
+    height: 300px;
+    background: #0C4E59;
+    color: #71A1AE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer > div div p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+}
+
+footer div + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer-nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #71A1AE;
+}
