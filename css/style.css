@@ -333,7 +333,7 @@ body {
 .appointment-section {
     background: var(--colorSeventeen);
     width: 100%;
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
 
 .appointment-container {
@@ -342,28 +342,27 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-between;
-    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .appointment-box {
     width: 100%;
     max-width: 565px;
     min-height: 458px;
-    padding: 110px;
+    padding: 39px 180px 39px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 
 .appointment-form {
     width: 100%;
     max-width: 565px;
-    min-height: 458px;
+    min-height: 383px;
+    padding: 39.53px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--colorNineteen);
@@ -391,49 +390,57 @@ body {
 .form-box {
     width: 100%;
     max-width: 565px;
-    height: 383px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
-    /* align-items: flex-end; */
-    /* justify-content: space-around; */
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .form-box input {
     background: var(--colorTwo);
-    width: 256px;
+    width: 236.5px;
     height: 46px;
     padding: 10px 15px;
     border-radius: 30px;
     border: 1px solid var(--colorOne);
     color: var(--colorOne);
+}
 
+.form-box input::placeholder{
+    color: var(--colorOne);
 }
 
 .form-box select {
     background: var(--colorTwo);
-    width: 256px;
+    width: 236.5px;
     height: 46px;
     padding: 10px 15px;
     border-radius: 30px;
     border: 1px solid var(--colorOne);
-    color: var(--colorOne);
+    color: var(--colorSeven);
+    font-weight: 400;
 }
 
 .form-box .submit-btn {
     background-image: linear-gradient(var(--colorEight), var(--colorNine));
-    padding: 10px 30px;
+    width: 161.8px;
+    height: 40px;
+    padding: 0px 30px;
     border-radius: 100px;
     color: var(--colorTwo);
     transition: .3s ease-in-out;
+}
+
+#date-input::placeholder {
+    color: var(--colorSeven);
 }
 /******************************************
 /* Services section
 /*******************************************/
 .services-section {
     width: 100%;
-    min-height: 419px;
+    min-height: 436px;
     background: rgb(229,237,242);
 }
 
@@ -452,8 +459,10 @@ body {
     width: 20%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
 }
 
 .services-container section img {
@@ -509,9 +518,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: space-between; */
-    padding-right: 350px;
-    
+    width: 100%;
+    max-width: 438.92px;
+    gap: 30px;
 }
 
 .about-container section span {
@@ -554,7 +563,7 @@ body {
 
 .review-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1269px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -566,11 +575,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .review-container  article p{
     font-size: 2.8rem;
-    line-height: 3.2rem;
+    line-height: 4.2rem;
     font-weight: 200;
     padding: 0 100px;
 }
@@ -633,26 +644,15 @@ body {
 .meet-drs-section {
     width: 100%;
     background-image: linear-gradient(rgb(0,84,106), rgb(0,158,174));
-    height: 600px;
+    height: 800px;
 }
 
-.meet-drs-section  h2{
+.meet-drs-section  h2 {
     color: var(--colorTwo);
     font-size: 3.8rem;
     font-weight: 200;
     text-align: center;
-}
-
-.meet-drs-section > a {
-    color: var(--colorTwo);
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-align: center;
-    padding: 3px 16px;
-    background: #ffffff4D;
-    border-radius: 5px;
+    padding: 60px;
 }
 
 .meet-drs-container {
@@ -669,13 +669,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 10px;
 }
 
 .meet-drs-container  article h4 {
     color: var(--colorTwo);
     font-weight: 200;
     font-size: 2.6rem;
+    padding-top: 20px;
 }
 
 .meet-drs-container  article span {
@@ -688,9 +689,23 @@ body {
     color: var(--colorTwo);
     font-weight: 200;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 256px;
 }
 
+.meet-drs-section > a {
+    color: var(--colorTwo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 16px;
+    background: #ffffff4D;
+    border-radius: 5px;
+}
 
 /******************************************
 /* Sign In section
@@ -710,11 +725,10 @@ body {
 }
 
 .sign-in-section-text {
-    padding: 0  50px 0 250px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    gap: 20px;
+    width: 565px;
 }
 
 .sign-in-container  section h2 {
@@ -722,6 +736,7 @@ body {
     font-size: 3.6rem;
     font-weight: 200;
 }
+
 .sign-in-container  section p {
     color: #292834;
     font-size: 2.0rem;
@@ -752,6 +767,7 @@ body {
     font-weight: 200;
     color: #1C1E24;
     text-align: center;
+    padding: 120px 0 60px 0;
 }
 .latest-news-container {
     width: 100%;
@@ -813,7 +829,7 @@ body {
     width: 100%;
     height: 155px;
     padding: 60px 0;
-    background: #19BFD1;
+    background: linear-gradient(rgb(92,166,227), rgb(93,199,196));
     color: var(--colorTwo);
 }
 
@@ -835,8 +851,10 @@ body {
 
 .contacts-section {
     width: 100%;
-    height: 202px;
-    background: #0A6076;
+    height: 400px;
+    background: url(../images/dental-contacts-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -845,10 +863,10 @@ body {
 
 .contacts-section div {
     padding: 70px 0;
+    width: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 40px;
 }
 
 .contacts-section div  h3{
@@ -857,7 +875,7 @@ body {
     color: var(--colorTwo);
 }
 
-.contacts-section div  a{
+.contacts-section div a{
     font-size: 2.0rem;
     font-weight: 200;
     text-decoration: none;
@@ -866,6 +884,7 @@ body {
 
 .contacts-section div  p{
     font-size: 2.0rem;
+    line-height: 3rem;
     font-weight: 200;
     color: var(--colorTwo);
 }
@@ -874,55 +893,63 @@ body {
 /******************************************
 /* Footer
 /*******************************************/
-footer {
+.footer {
     width: 100%;
-    height: 300px;
+    height: 252px;
+    padding-top: 63px;
     background: #0C4E59;
     color: #71A1AE;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-between; */
 }
 
-footer > div{
+.footer-container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-footer > div div p {
-    font-size: 1.5rem;
-    font-weight: 200;
-    
-}
-
-footer div + div {
+.footer-section1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
+    gap: 40px;
 }
+
+.footer-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.footer-section1 div p {
+    font-size: 1.5rem;
+    font-weight: 200;    
+}
+
+.footer-section2  > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 
 .footer-nav { 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    gap: 20px;
 }
 
 .footer-nav li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    list-style: none;
 }
 
 .footer-nav li a {
     text-decoration: none;
+    font-size: 1.5rem;
     color: #71A1AE;
 }

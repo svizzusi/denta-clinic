@@ -90,10 +90,10 @@
                 </section>
                 <section class="appointment-form">
                     <form class="form-box">
-                        <input type="text">
-                        <input type="text">
-                        <input type="tel">
-                        <input type="email">
+                        <input type="text" placeholder="First Name" name="first_name" required>
+                        <input type="text" placeholder="Last Name" name="last_name" required>
+                        <input type="tel" placeholder="Phone Number" name="phone_number" required>
+                        <input type="email" placeholder="Email" name="email_name" required>
                         <select>
                             <option selected value="0">Department</option>
                             <option value="1">Complete Whitening Pack</option>
@@ -112,7 +112,7 @@
                             <option value="3">Doug Fissure</option>
                             <option value="4">Mike Gum</option>
                         </select>
-                        <input type="text" value="01/01/2018">
+                        <input id="date-input" type="text" placeholder="01/01/2018" name="date" required>
                         <select>
                             <option selected value="0">Time</option>
                             <option value="1">9:00AM</option>
@@ -238,19 +238,19 @@
                     <img src="./images/dental-doctor1.png" alt="Matthew">
                     <h4>Matthew Brooks</h4>
                     <span>General Dentist</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora, nemo possimus inventore ipsam praesentium ullam temporibus accusantium ea rem non </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
                 </article>
                 <article>
                     <img src="./images/dental-doctor2.png" alt="Megan">
                     <h4>Megan Clark</h4>
                     <span>Orthodontist</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora, nemo possimus inventore ipsam praesentium ullam temporibus accusantium ea rem non </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing. 7</p>
                 </article>
                 <article>
                     <img src="./images/dental-doctor3.png" alt="Paul">
                     <h4>Paul Hill</h4>
                     <span>Periodontist</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora, nemo possimus inventore ipsam praesentium ullam temporibus accusantium ea rem non </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit.</p>
                 </article>
             </div>
             <a href="#">VIEW STAFF</a>
@@ -336,34 +336,35 @@
         </section>   
     </main>
 
-    <footer>
-        <div>
-            <div>
-                <img src="./images/dental-logo.png" alt="logo">
-            </div>
-            <div>
-                <p>Privacy Policy / This is a sample website - cmsmasters © 2022 / All Rights Reserved</p>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <span><ion-icon class="ionicon" name="logo-facebook"></ion-icon></span>
-                <span><ion-icon class="ionicon" name="logo-instagram"></ion-icon></span>
-                <span><ion-icon class="ionicon" name="logo-twitter"></ion-icon></span>
-                <span><ion-icon class="ionicon" name="logo-youtube"></ion-icon></span>
-            </div>
-            <div>
-                <ul class="footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Find a Doctor</a></li>
-                    <li><a href="#">Make appointments</a></li>
-                </ul>
-            </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-section1">
+                <div>
+                    <img src="./images/dental-logo.png" alt="logo">
+                </div>
+                <div>
+                    <p>Privacy Policy / This is a sample website - cmsmasters © 2022 / All Rights Reserved</p>
+                </div>
+            </section>
+    
+            <section class="footer-section2">
+                <div>
+                    <span><ion-icon class="ionicon" name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon class="ionicon" name="logo-instagram"></ion-icon></span>
+                    <span><ion-icon class="ionicon" name="logo-twitter"></ion-icon></span>
+                    <span><ion-icon class="ionicon" name="logo-youtube"></ion-icon></span>
+                </div>
+                <div>
+                    <ul class="footer-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">Make appointments</a></li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </footer>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    <script src="js/main.js" ></script>
