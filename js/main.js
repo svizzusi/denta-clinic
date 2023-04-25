@@ -13,3 +13,16 @@ function scrollFunction() {
     navbar.style.boxShadow = "none";
   }
 }
+
+// swiper
+let swiper = new Swiper('.swiper-container', {
+  // Set your desired options here
+  loop: true, // enable loop mode
+  pagination: {
+    el: '.swiper-pagination', // specify the pagination element
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // specify the next button element
+    prevEl: '.swiper-button-prev', // specify the previous button element
+  },
+});
