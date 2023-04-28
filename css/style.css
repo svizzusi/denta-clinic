@@ -264,16 +264,19 @@ body {
 /*******************************************/
 
 .big-section {
+    width: 100%;
+    background-image: linear-gradient(rgb(0,84,106), rgb(0,158,174));
+}
+
+.big-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-    width: 100%;
-    /* max-width: 1200px; */
-    margin: auto;
     padding: 100px 0;
-    background-image: linear-gradient(rgb(0,84,106), rgb(0,158,174));
 }
 
 .big-section article {
@@ -510,40 +513,58 @@ body {
 }
 
 .about-container  {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+}
+
+.about-container > div, section {
+    width: 50%;
+    height: 100%;
+}
+
+.about-container > div {
+    background: url(https://denta.cmsmasters.net/wp-content/uploads/2017/08/home-222-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .about-container section {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.about-container > section div {
+    width: 100%;
+    max-width: 490px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 438.92px;
     gap: 30px;
 }
 
-.about-container section span {
+.about-container section div span {
     color: #0A6076;
     font-size: 2.2rem;
     font-weight: 200;
 }
 
-.about-container section h3 {
+.about-container section div h3 {
     color: #292834;
     font-size: 3.8rem;
     font-weight: 200;
 }
 
-.about-container section p{
+.about-container section div p{
     color: #47535C;
     font-size: 2.0rem;
     font-weight: 200;
 }
 
-.about-container section a {
+.about-container section div a {
     background-image: linear-gradient(var(--colorEight), var(--colorNine));
     padding: 15px 38px;
     font-size: 1.2rem;
@@ -551,6 +572,7 @@ body {
     text-decoration: none;
     color: var(--colorTwo);
     transition: .3s ease-in-out;
+    width: 150px;
 }
 /******************************************
 /* Review section
@@ -903,13 +925,13 @@ body {
     width: 180px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 .contacts-section div  h3{
     font-size: 2.4rem;
     font-weight: 200;
     color: var(--colorTwo);
+    padding-bottom: 40px;
 }
 
 .contacts-section div a{
@@ -926,6 +948,12 @@ body {
     color: var(--colorTwo);
 }
 
+.contacts-section div  address{
+    font-size: 2.0rem;
+    line-height: 3rem;
+    font-weight: 200;
+    color: var(--colorTwo);
+}
 
 /******************************************
 /* Footer
@@ -996,4 +1024,94 @@ body {
 
 .ionicon:hover {
     color: var(--colorEleven);
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+/* Desktop screens */
+
+@media  screen and (max-width:1200px) {
+    .top-header {
+        max-width: 980px;
+    }
+
+    .navigation {
+        max-width: 980px;
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .hero-section > div {
+        max-width: 980px;
+    }
+
+    .big-container {
+        max-width: 980px;
+    }
+
+    .appointment-container {
+        max-width: 980px;
+    }
+
+    .appointment-box {
+        max-width: 504px;
+    }
+    
+    .appointment-form {
+        max-width: 444px;
+    }
+
+    .form-box input {
+        width: 404px;
+    }
+
+    .form-box select {
+        width: 404px;
+    }
+    
+    .meet-drs-container {
+        max-width: 980px;
+    }
+}
+
+
+/* Laptop */
+
+@media  screen and (max-width:1024px) {
+    
+}
+
+/* tablet */
+
+@media  screen and (max-width:768px) {
+    .about-section {
+        width: 100%;
+        height: fit-content;
+        background: rgb(242, 248, 254);
+    }
+
+    .about-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-container > div, section {
+        width: 100%;
+        min-height: 636px;
+    }
+}
+
+/* mobile */
+
+@media  screen and (max-width:480px) {
+    
+    .about-container > section {
+        padding: 60px 30px;
+    }
 }
