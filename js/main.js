@@ -36,7 +36,7 @@ reviewSection();
 function patientCareSection() {
   let swiper = new Swiper('.patient-care-container .swiper-container', {
     // Set your desired options here
-    loop: true, // enable loop mode
+    loop: true,// enable loop mode
     pagination: {
       el: '.swiper-pagination', // specify the pagination element
     },

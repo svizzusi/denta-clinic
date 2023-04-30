@@ -330,6 +330,11 @@ body {
     text-decoration: none;
 }
 
+.big-section article a:hover {
+    color: var(--colorSeventeen);
+    background: var(--colorTwo);
+}
+
 
 /******************************************
 /* Appointment section
@@ -501,7 +506,6 @@ body {
     font-weight: 200;
 }
 
-
 /******************************************
 /* About section
 /*******************************************/
@@ -509,62 +513,66 @@ body {
 .about-section {
     width: 100%;
     height: 640px;
+    display: flex;
     background: rgb(242,248,254);
 }
 
-.about-container  {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.about-container > div, section {
+.about-section section {
     width: 50%;
     height: 100%;
-}
-
-.about-container > div {
-    background: url(https://denta.cmsmasters.net/wp-content/uploads/2017/08/home-222-2.jpg);
+    background-image: url(../images/dental-dentists.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 }
 
-.about-container section {
-    background: transparent;
+.about-section article {
+    width: 50%;
+    height: 100%;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    padding: 60px;
+    padding: 75px;
 }
 
-.about-container > section div {
+.about-section article div {
     width: 100%;
-    max-width: 490px;
+    max-width: 488.11px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: flex-start;
 }
 
-.about-container section div span {
+.about-section article h2 {
     color: #0A6076;
     font-size: 2.2rem;
     font-weight: 200;
+    padding-bottom: 20px;
 }
 
-.about-container section div h3 {
+.about-section article h3 {
     color: #292834;
     font-size: 3.8rem;
     font-weight: 200;
+    padding-bottom: 40px;
 }
 
-.about-container section div p{
+
+.about-section article p {
     color: #47535C;
     font-size: 2.0rem;
     font-weight: 200;
+    padding-bottom: 20px;
 }
 
-.about-container section div a {
+.about-section article p + p {
+    padding-bottom: 40px;
+}
+
+.about-section article a {
+    display: block;
+    width: fit-content;
     background-image: linear-gradient(var(--colorEight), var(--colorNine));
     padding: 15px 38px;
     font-size: 1.2rem;
@@ -572,8 +580,13 @@ body {
     text-decoration: none;
     color: var(--colorTwo);
     transition: .3s ease-in-out;
-    width: 150px;
+    margin-top: 30px;
 }
+.about-section article a:hover {
+    background-image: linear-gradient( to top, var(--colorEight), var(--colorNine));
+    color: var(--colorTwo);
+}
+
 /******************************************
 /* Review section
 /*******************************************/
@@ -645,13 +658,6 @@ body {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
-}
-
-.swiper-slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .swiper-slide {
@@ -753,32 +759,39 @@ body {
     width: 100%;
     height: 673px;
     background: rgb(232,237,241);
-}
-
-.sign-in-container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
 }
 
-.sign-in-section-text {
+.sign-in-article {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 75px;
+}
+
+.sign-in-article div {
+    width: 100%;
+    max-width: 564.89px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 565px;
+    justify-content: flex-start;
 }
 
-.sign-in-container  section h2 {
+.sign-in-article div h2 {
     color: #292834;
     font-size: 3.6rem;
     font-weight: 200;
+    padding-bottom: 20px;
 }
 
-.sign-in-container  section p {
+.sign-in-article div p {
     color: #292834;
     font-size: 2.0rem;
     font-weight: 200;
+    padding-bottom: 20px;
 }
 
 .form-container {
@@ -792,6 +805,7 @@ body {
     border: 1px solid var(--colorOne);
     font-size: 1.6rem;
     padding: 7px;
+    margin-bottom: 20px;
 }
 
 .email-input {
@@ -809,11 +823,22 @@ body {
     color: var(--colorTwo);
 }
 
-.sign-in-container  section form + p {
+.sign-in-article div form + p {
     color: #787D7F;
     font-size: 1.6rem;
     font-weight: 200;
 }
+
+.sign-in-section section {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/dental-signin-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 /******************************************
 /* Latest News section
 /*******************************************/
@@ -889,15 +914,22 @@ body {
     padding: 60px 0;
     background: linear-gradient(to right, rgb(92,166,227), rgb(93,199,196));
     color: var(--colorTwo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.appointments-section h3 {
+.appointments-section div {
+    max-width: 1200px;
+}
+
+.appointments-section div h3 {
     font-size: 2.8rem;
     font-weight: 200;
     text-align: center;
 }
 
-.appointments-section a {
+.appointments-section div a {
     font-size: 2.8rem;
     font-weight: 200;
     text-align: center;
@@ -917,38 +949,45 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.contacts-section div {
+.contacts-section section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+.contacts-section section div {
     padding: 70px 0;
     width: 180px;
     display: flex;
     flex-direction: column;
 }
 
-.contacts-section div  h3{
+.contacts-section section div  h3{
     font-size: 2.4rem;
     font-weight: 200;
     color: var(--colorTwo);
     padding-bottom: 40px;
 }
 
-.contacts-section div a{
+.contacts-section section div a{
     font-size: 2.0rem;
     font-weight: 200;
     text-decoration: none;
     color: var(--colorTwo);
 }
 
-.contacts-section div  p{
+.contacts-section section div  p{
     font-size: 2.0rem;
     line-height: 3rem;
     font-weight: 200;
     color: var(--colorTwo);
 }
 
-.contacts-section div  address{
+.contacts-section section div address{
     font-size: 2.0rem;
     line-height: 3rem;
     font-weight: 200;
@@ -1072,12 +1111,59 @@ body {
     .form-box select {
         width: 404px;
     }
-    
-    .meet-drs-container {
-        max-width: 980px;
-    }
-}
 
+    .about-section article div {
+        max-width: 355.5px;
+    }
+    .review-container {
+        max-width: 828px;
+    }
+
+    .patient-care-container {
+        max-width: 970px;
+    }
+
+    .swiper-slide img {
+        height: 207px;
+        width: 294px;
+        object-fit: cover;
+    }
+
+    .meet-drs-container {
+        max-width: 965px;
+    }
+
+    .meet-drs-container  article img {
+        width: 177.59px;
+        height: 177.59px;
+    }
+
+    .sign-in-article div {
+        max-width: 457.75px;
+    }
+
+    .latest-news-container {
+        max-width: 965px;
+    }
+
+    .latest-news-container img{
+        width: 160.3;
+        height: 160.3;
+    }
+
+    .appointments-section div {
+        max-width: 871.06px;
+    }
+
+    .footer-container {
+        max-width: 965px;
+    }
+
+    .footer-section1 div p {
+        width: 329px;
+    }
+
+} 
 
 /* Laptop */
 
@@ -1088,30 +1174,11 @@ body {
 /* tablet */
 
 @media  screen and (max-width:768px) {
-    .about-section {
-        width: 100%;
-        height: fit-content;
-        background: rgb(242, 248, 254);
-    }
-
-    .about-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .about-container > div, section {
-        width: 100%;
-        min-height: 636px;
-    }
+    
 }
 
 /* mobile */
 
 @media  screen and (max-width:480px) {
     
-    .about-container > section {
-        padding: 60px 30px;
-    }
 }
