@@ -50,3 +50,13 @@ function patientCareSection() {
   });
 }
 patientCareSection();
+
+// top header toggle
+
+const toggleBtn = document.getElementById('header-toggle-btn');
+const topHeader = document.querySelector('.top-header');
+
+toggleBtn.addEventListener('click', function(){
+  topHeader.classList.toggle('show')
+}) 
+
