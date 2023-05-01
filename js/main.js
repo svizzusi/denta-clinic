@@ -1,18 +1,41 @@
+
 window.onscroll = function() {scrollFunction()};
 const navbar = document.querySelector('#navbar');
+const hamburger = document.querySelector('.hamburger');
+const closeHamburger = document.querySelector('.close-hamburger');
+const navList = document.querySelector('.nav-list');
 
 function scrollFunction() {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     navbar.style.height = "80px";
+    navList.style.top = "80px";
     navbar.style.background = "white";
-    navbar.style.boxShadow = "none";
     navbar.style.transition = ".3s ease-in-out";
   } else {
     navbar.style.height = "120px";
+    navList.style.top = "120px";
     navbar.style.background = "white";
-    navbar.style.boxShadow = "none";
+    navbar.style.transition = "none";
   }
 }
+
+hamburger.addEventListener('click', function () {
+  const displayMenu = () => {
+    navList.style.display = "flex";
+    hamburger.style.display = "none";
+    closeHamburger.style.display = "block";
+  };
+  displayMenu();
+});
+
+closeHamburger.addEventListener('click', function () {
+  const hideMenu = () => {
+    navList.style.display = "none";
+    hamburger.style.display = "block";
+    closeHamburger.style.display = "none";
+  };
+  hideMenu();
+});
 
 // swiper
 function reviewSection() {

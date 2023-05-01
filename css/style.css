@@ -69,7 +69,7 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .top-header-box-1 {
@@ -132,9 +132,10 @@ body {
     border: none;
     color: var(--colorFour);
     border-top: 1px solid var(--colorOne);
-    background: none;
+    background: var(--colorTwo);
     padding: 10px;
     display: none;
+    z-index: 2;
 }
 
 
@@ -150,6 +151,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 16px;
     position: sticky;
     top: 0;
     background: var(--colorTwo);
@@ -175,31 +177,35 @@ body {
 
 .nav-menu {
     width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
 }
-
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
     gap: 30px;
 }
 
-.nav-list a {
+.nav-menu a {
     font-size: 1.7rem;
     text-decoration: none;
     color: var(--colorSeven);
 }
 
-.nav-list a:hover {
+.nav-menu a:hover {
     color: var(--colorThree);
 }
 
-.nav-list .active {
+.nav-menu .active {
     color: var(--colorThree);
 }
 
-.nav-list .nav-list-btn {
+.nav-menu .nav-list-btn {
     background-image: linear-gradient(var(--colorEight), var(--colorNine));
     padding: 15px 20px;
     border-radius: 100px;
@@ -208,9 +214,13 @@ body {
     transition: .3s ease-in-out;
 }
 
-.nav-list .nav-list-btn:hover {
+.nav-menu .nav-list-btn:hover {
     background-image: linear-gradient( to top, var(--colorEight), var(--colorNine));
     color: var(--colorTwo);
+}
+
+.hamburger, .close-hamburger{
+    display: none;
 }
 
 
@@ -780,7 +790,7 @@ body {
 
 .sign-in-section {
     width: 100%;
-    height: 673px;
+    height: 669px;
     background: rgb(232,237,241);
     display: flex;
 }
@@ -882,7 +892,6 @@ body {
 
 .latest-news-section h2 {
     font-size: 3.8rem;
-    font-family: "Arimo";
     font-weight: 200;
     color: #1C1E24;
     text-align: center;
@@ -1215,6 +1224,7 @@ body {
         padding: 20px;
         gap: 30px;
         display: none;
+        z-index: 0;
     }
 
     .top-header.show {
@@ -1247,6 +1257,31 @@ body {
     #header-toggle-btn {
         display: block;
 
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 25px;
+    }
+
+    .close-hamburger {
+        font-size: 25px;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0;
+        margin: auto;
+        width: 20%;
+        height: fit-content;
+        padding: 30px 16px;
+        border-radius: 0 0 20px 20px;
+        background: var(--colorTwo);
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: none;
+        display: none;
     }
 
 }
