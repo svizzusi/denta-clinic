@@ -136,13 +136,13 @@ body {
     padding: 10px;
     display: none;
     z-index: 2;
+    opacity: 1;
 }
 
 
 /******************************************
 /* NAV section
 /*******************************************/
-
 
 .navigation-header {
     width: 100%;
@@ -223,7 +223,6 @@ body {
     display: none;
 }
 
-
 /******************************************
 /* Hero section
 /*******************************************/
@@ -235,8 +234,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .hero-section > div {
@@ -358,7 +356,6 @@ body {
     background: var(--colorTwo);
 }
 
-
 /******************************************
 /* Appointment section
 /*******************************************/
@@ -476,6 +473,7 @@ body {
 /******************************************
 /* Services section
 /*******************************************/
+
 .services-section {
     width: 100%;
     min-height: 436px;
@@ -627,6 +625,7 @@ body {
     background: rgb(245,250,253);
     color: var(--colorSeven);
 }
+
 .review-container {
     width: 100%;
     max-width: 1269px;
@@ -670,6 +669,7 @@ body {
 /******************************************
 /* Patient Care Section
 /*******************************************/
+
 .patient-care-section {
     width: 100%;
     height: 200px;
@@ -784,6 +784,7 @@ body {
     color: var(--colorEleven);
     background: #ffffff;
 }
+
 /******************************************
 /* Sign In section
 /*******************************************/
@@ -879,7 +880,6 @@ body {
     background-size: cover;
 }
 
-
 /******************************************
 /* Latest News section
 /*******************************************/
@@ -897,6 +897,7 @@ body {
     text-align: center;
     padding: 120px 0 60px 0;
 }
+
 .latest-news-container {
     width: 100%;
     max-width: 1200px;
@@ -939,13 +940,13 @@ body {
     text-decoration: none;
 }
 
-
 .latest-news-box p {
     color: #4A4F52;
     font-family: "Arimo";
     font-size: 1.5rem;
     font-weight: 200;
 }
+
 /******************************************
 /* Appointment section
 /*******************************************/
@@ -1224,11 +1225,12 @@ body {
         padding: 20px;
         gap: 30px;
         display: none;
-        z-index: 0;
+        z-index: 1;
     }
 
     .top-header.show {
         display: flex;
+        z-index: -1;
     }
 
     .top-header-box-1 {
@@ -1256,7 +1258,7 @@ body {
 
     #header-toggle-btn {
         display: block;
-
+        z-index: 1;
     }
 
     .hamburger {
@@ -1284,11 +1286,132 @@ body {
         display: none;
     }
 
+    .navigation-header {
+        padding: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        max-width: none;
+        padding: inherit;
+    }
+
+    .padding-side {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .services-container section {
+        width: 260px;
+    }
+
+    .big-section article h3 {
+        font-size: 2.8rem;
+    }
+
 }
 
 /* tablet */
 
 @media  screen and (max-width:768px) {
+
+    .top-header-box-1 {
+        width: 350px;
+        max-width: 350px;
+    }
+
+    .top-header-box-2 {
+        width: 284.56px;
+        max-width: 284.56px;
+    }
+
+    .top-header-box-3 {
+        width: 344.97px;
+        max-width: 344.97px;
+    }
+
+    .navigation-header {
+        height: fit-content;
+        padding: 20px 0;
+        height: 30vh;
+        position: relative;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hamburger {
+        order: 4;
+    }
+
+    .close-hamburger {
+        order: 3;
+    }
+
+    .nav-menu .nav-list-btn {
+        display: block;
+        order: 2;
+    }
+
+    .nav-list {
+        top: 243px;
+        right: 0;
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .big-container {
+        flex-direction: column;
+    }
+
+    .big-section article h3 {
+        font-size: 2.8rem;
+    }
+
+    .big-section article {
+        max-width: 694px;
+        height: 310px;
+    }
+
+    .appointment-box {
+        max-width: 713px;
+    }
+    
+    .appointment-form {
+        max-width: 713px;
+    }
+
+    .form-box input {
+        width: 586px;
+    }
+    
+    .form-box select {
+        width: 586px;
+    }
+
+    .services-container section {
+        width: 464px;
+    }
+    
+
     
 }
 

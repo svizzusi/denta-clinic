@@ -1,10 +1,10 @@
 
-window.onscroll = function() {scrollFunction()};
 const navbar = document.querySelector('#navbar');
 const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close-hamburger');
 const navList = document.querySelector('.nav-list');
 
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     navbar.style.height = "80px";
@@ -83,3 +83,9 @@ toggleBtn.addEventListener('click', function(){
   topHeader.classList.toggle('show')
 }) 
 
+const mediaQuery = window.matchMedia('(max-width:768px)')
+  if (mediaQuery.matches) {
+    scrollFunction = null;
+  } else {
+    window.onscroll = function() {scrollFunction()};
+  }
