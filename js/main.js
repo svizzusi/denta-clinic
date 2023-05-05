@@ -33,9 +33,25 @@ closeHamburger.addEventListener('click', function () {
     navList.style.display = "none";
     hamburger.style.display = "block";
     closeHamburger.style.display = "none";
-  };
+ };
   hideMenu();
 });
+
+function closeLargeScreenHamburger () {
+  const mediaQuery = window.matchMedia('(min-width:1024px)')
+  function updateHamburgerDisplay () {
+    if (mediaQuery.matches) {
+      hamburger.style.display = "none";
+      closeHamburger.style.display = "none";
+    } else {
+      hamburger.style.display = "block";
+      closeHamburger.style.display = "none";
+    }
+  }
+  updateHamburgerDisplay();
+  window.addEventListener('resize', updateHamburgerDisplay);
+}
+closeLargeScreenHamburger();
 
 // swiper
 function reviewSection() {
