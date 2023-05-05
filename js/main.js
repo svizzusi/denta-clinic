@@ -65,7 +65,22 @@ function patientCareSection() {
     },
     navigation: false,
     scrollbar: false,
-    slidesPerView: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      }, 
+      423: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      622: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+    },
     autoplay: {
       delay: 5000, // set the time delay between slides in milliseconds
       disableOnInteraction: false, // set to false to prevent autoplay from stopping on user interaction
@@ -89,3 +104,4 @@ const mediaQuery = window.matchMedia('(max-width:768px)')
   } else {
     window.onscroll = function() {scrollFunction()};
   }
+
