@@ -1671,6 +1671,28 @@ body {
 /* mobile */
 
 @media  screen and (max-width:480px) {
+    #header-toggle-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-header-box-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation-header {
+        padding-top: 0;
+    }
+
+    .nav-logo {
+        width: fit-content;
+        max-width: fit-content;
+    }
 
     .appointment-box {
         width: 100%;
