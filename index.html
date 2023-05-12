@@ -8,10 +8,10 @@
     <!-- Media tags for social media -->
     <meta property="og:title" content="Denta Clinic">
     <meta property="og:description" content="A Perfect Smile Guaranteed">
-    <meta property="og:image" content="./images/dental-logo.png">
+    <meta property="og:image" content="./images/logo.png">
     <meta property="og:url" content="https://dentaclinic.netlify.app/">
     <!-- add icon to tab -->
-    <link rel="icon" type="image/png" href="./images/dental-logo-small.png" sizes="10x10">
+    <link rel="icon" type="image/png" href="./images/logo.png" sizes="10x10">
     <!-- Search Engine-->
     <meta name="author" content="Stephen Vizzusi">
 
@@ -53,20 +53,21 @@
     <header class="navigation-header padding-side" id="navbar">
         <nav class="navigation">
             <div class="nav-logo">
-                <img src="./images/dental-logo.png" alt="logo">
+                <a href="./index.html">
+                    <img src="./images/dental-logo.webp" alt="logo">
+                </a>
             </div>
             <div class="nav-menu">
                 <ul class="nav-list">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Shortcodes</a></li>
-                    <li><a href="#">Post Types</a></li>
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./index.html#doctors">Meet the Doctors</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./index.html#appointment">Appointments</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
                 <ion-icon class="close-hamburger" name="close-outline"></ion-icon>
                 <ion-icon class="hamburger" name="layers-outline"></ion-icon>
-                <a class="nav-list-btn" href="#">Book Now!</a>
+                <a class="nav-list-btn" href="./index.html#appointment">Book Now!</a>
             </div>
         </nav>
     </header>
@@ -76,7 +77,7 @@
             <div>
                 <h1>Beautiful Natural Smiles</h1>
                 <h2>A perfect smile guaranteed</h2>
-                <a href="#">MAKE AN APPOINTMENT</a>
+                <a href="./index.html#appointment">MAKE AN APPOINTMENT</a>
             </div>
         </section>
 
@@ -103,7 +104,7 @@
             </div>
         </section>
 
-        <section class="appointment-section padding-side">
+        <section class="appointment-section padding-side" id="appointment">
             <div class="appointment-container">
                 <section class="appointment-box">
                     <h4>Welcome to Us</h4>
@@ -157,17 +158,17 @@
         <section class="services-section">
             <div class="services-container">
                 <section>
-                    <img src="images/dental-icon1.png" alt="Icon 1">
+                    <img src="images/dental-icon1.webp" alt="Icon 1">
                     <h3 class="service-h3-1">Teeth Whitening</h3>
                     <p>Whitening is among the most popular dental procedures because it can greatly improve how your teeth look.</p>
                 </section>
                 <section>
-                    <img src="images/dental-icon2.png" alt="Icon 2">
+                    <img src="images/dental-icon2.webp" alt="Icon 2">
                     <h3 class="service-h3-2">Teeth Cleaning</h3>
                     <p>Teeth cleaning is part of oral hygiene and involves the removal of dental plaque from teeth (dental caries).</p>
                 </section>
                 <section>
-                    <img src="images/dental-icon3.png" alt="Icon 3">
+                    <img src="images/dental-icon3.webp" alt="Icon 3">
                     <h3 class="service-h3-3">Quality Brackets</h3>
                     <p>Orthodontics is the branch of dentistry that corrects teeth and jaws that are positioned improperly.</p>
                 </section>
@@ -188,7 +189,7 @@
                     <h3>Catering to all of your dental needs and desires</h3>
                     <p>Our Dental Office is dedicated to providing the most up to date general, orthodontic and family dentistry.</p>
                     <p>Our Office has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and advanced restorative dentistry.</p>
-                    <a href="#">LEARN MORE</a>
+                    <a href="./about.html">LEARN MORE</a>
                 </div>
             </article>
         </section>
@@ -224,25 +225,25 @@
                     <div class="swiper-wrapper">
                         <article class="swiper-slide">
                             <div>
-                                <img src="./images/dental-care1.png" alt="Teeth Whitening">
+                                <img src="./images/dental-care1.webp" alt="Teeth Whitening">
                             </div>                       
                             <h4>Teeth Whitening</h4>                  
                         </article>
                         <article class="swiper-slide">  
                             <div>
-                                <img src="./images/dental-care2.png" alt="Restoritive Dentistry">
+                                <img src="./images/dental-care2.webp" alt="Restoritive Dentistry">
                             </div>                         
                             <h4>Restorative Dentistry</h4>
                         </article>
                         <article class="swiper-slide"> 
                             <div>
-                                <img src="./images/dental-care3.png" alt="Cleaning">
+                                <img src="./images/dental-care3.webp" alt="Cleaning">
                             </div>                          
                             <h4>Cleaning</h4>
                         </article>
                         <article class="swiper-slide">
                             <div>
-                                <img src="./images/dental-care4.png" alt="Invisalign">
+                                <img src="./images/dental-care4.webp" alt="Invisalign">
                             </div>                           
                             <h4>Invisalign</h4>
                         </article>
@@ -275,7 +276,7 @@
             </div>
         </section>
 
-        <section class="meet-drs-section">
+        <section class="meet-drs-section" id="doctors">
             <h2>Meet Our Doctors</h2>
             <div class="meet-drs-container">
                 <article>
@@ -358,7 +359,7 @@
 
         <section class="appointments-section">
             <div>
-                <h3>Make your dream smile a reality! Call us at 1-800-553-3364 or <a href="#">Make an Appointment</a></h3>
+                <h3>Make your dream smile a reality! Call us at 1-800-553-3364 or <a href="./index.html#appointment">Make an Appointment</a></h3>
             </div>
         </section>
 
@@ -366,7 +367,7 @@
             <section>
                 <div>
                     <h3>Links</h3>
-                    <a href="#">Book an Apointment</a>
+                    <a href="./index.html#appointment">Book an Apointment</a>
                 </div>
                 <div>
                     <h3>Office</h3>
@@ -391,7 +392,7 @@
         <div class="footer-container">
             <section class="footer-section1">
                 <div>
-                    <img src="./images/dental-logo.png" alt="logo">
+                    <img src="./images/dental-logo.webp" alt="logo">
                 </div>
                 <div>
                     <p>Stephen Vizzusi Design © 2023 / All Rights Reserved</p>
@@ -407,10 +408,10 @@
                 </div>
                 <div>
                     <ul class="footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">Make appointments</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./index.html#appointment">Appointments</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </section>
