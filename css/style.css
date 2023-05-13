@@ -547,7 +547,7 @@ body {
 .about-section section {
     width: 50%;
     height: 100%;
-    background-image: url(../images/dental-dentists.jpeg);
+    background-image: url(../images/dental-dentists.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -892,7 +892,7 @@ body {
 .sign-in-section section {
     width: 50%;
     height: 100%;
-    background-image: url(../images/dental-signin-bg.png);
+    background-image: url(../images/dental-signin-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
