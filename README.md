@@ -66,6 +66,6 @@ Contributions to the Denta Clinic website are welcome. If you'd like to contribu
 
 ## License
 
-The Denta Clinic website is open-source and available under the MIT License. Feel free to use, modify, and distribute it according to the terms of the license.
+This website is a personal project and not open-source. All rights are reserved.
 
 Thank you for choosing Denta Clinic! We hope it serves as a valuable tool for your dental office. If you have any questions or encounter issues, please don't hesitate to [contact us](mailto:contact@dentaclinic.com).
